@@ -70,18 +70,22 @@ export function Projects() {
                       </div>
                       
                       <div className="flex gap-4">
-                        <Button asChild>
-                          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                            <ExternalLink className="mr-2 h-4 w-4" />
-                            Live Demo
-                          </a>
-                        </Button>
-                        <Button variant="outline" asChild>
-                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                            <GithubIcon className="mr-2 h-4 w-4" />
-                            Source Code
-                          </a>
-                        </Button>
+                        {project.liveUrl && (
+                          <Button asChild>
+                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="mr-2 h-4 w-4" />
+                              Live Demo
+                            </a>
+                          </Button>
+                        )}
+                        {project.githubUrl && (
+                          <Button variant="outline" asChild>
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                              <GithubIcon className="mr-2 h-4 w-4" />
+                              Source Code
+                            </a>
+                          </Button>
+                        )}
                       </div>
                     </div>
                   </div>
