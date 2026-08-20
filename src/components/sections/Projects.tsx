@@ -44,12 +44,12 @@ export function Projects() {
                       <CardDescription className="text-base mb-6 text-foreground/80">
                         {project.description}
                       </CardDescription>
-                      
+
                       <div className="mb-6">
                         <h4 className="text-sm font-semibold mb-2">The Problem:</h4>
                         <p className="text-sm text-muted-foreground">{project.problem}</p>
                       </div>
-                      
+
                       <div className="mb-8">
                         <h4 className="text-sm font-semibold mb-3">Key Highlights:</h4>
                         <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
@@ -59,7 +59,7 @@ export function Projects() {
                         </ul>
                       </div>
                     </div>
-                    
+
                     <div className="mt-auto">
                       <div className="flex flex-wrap gap-2 mb-8">
                         {project.tech.map((tech) => (
@@ -68,7 +68,7 @@ export function Projects() {
                           </Badge>
                         ))}
                       </div>
-                      
+
                       <div className="flex gap-4">
                         {project.liveUrl && (
                           <Button asChild>
@@ -89,23 +89,23 @@ export function Projects() {
                       </div>
                     </div>
                   </div>
-                  
+
                   {/* Decorative placeholder for project image/architecture */}
                   <div className="lg:w-2/5 min-h-[300px] lg:min-h-full bg-black/40 border-l border-border/30 relative overflow-hidden flex items-center justify-center p-8">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-50" />
                     <div className="w-full aspect-video rounded-lg border border-white/10 bg-black/60 shadow-2xl flex items-center justify-center backdrop-blur-md overflow-hidden relative">
-                       {/* Abstract code representation */}
-                       <div className="absolute top-4 left-4 flex gap-2">
-                         <div className="w-3 h-3 rounded-full bg-red-500/50" />
-                         <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
-                         <div className="w-3 h-3 rounded-full bg-green-500/50" />
-                       </div>
-                       <div className="w-3/4 h-3/4 flex flex-col justify-center gap-3 opacity-30 mt-4">
-                         <div className="h-4 w-full bg-muted rounded" />
-                         <div className="h-4 w-5/6 bg-muted rounded" />
-                         <div className="h-4 w-4/6 bg-muted rounded" />
-                         <div className="h-4 w-full bg-muted rounded" />
-                       </div>
+                      {/* Abstract code representation */}
+                      <div className="absolute top-4 left-4 flex gap-2">
+                        <div className="w-3 h-3 rounded-full bg-red-500/50" />
+                        <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
+                        <div className="w-3 h-3 rounded-full bg-green-500/50" />
+                      </div>
+                      <div className="w-3/4 h-3/4 flex flex-col justify-center gap-3 opacity-30 mt-4">
+                        <div className="h-4 w-full bg-muted rounded" />
+                        <div className="h-4 w-5/6 bg-muted rounded" />
+                        <div className="h-4 w-4/6 bg-muted rounded" />
+                        <div className="h-4 w-full bg-muted rounded" />
+                      </div>
                     </div>
                   </div>
                 </div>
