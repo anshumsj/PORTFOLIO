@@ -126,7 +126,7 @@ export const projects = [
     ],
 
     githubUrl: "https://github.com/anshumsj/BankingSystem",
-    liveUrl: null,
+    liveUrl: "https://example.com",
   }
 ];
 
